@@ -3,6 +3,7 @@ import { Inter, Outfit } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import { LiveChat } from '@/components/LiveChat'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' })
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body className={`${inter.variable} ${outfit.variable} antialiased bg-white dark:bg-slate-950 transition-colors`}>
         <Navbar />
         <main className="min-h-screen">{children}</main>
+        <LiveChat />
         <Footer />
       </body>
     </html>

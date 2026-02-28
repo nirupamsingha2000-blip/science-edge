@@ -25,13 +25,7 @@ export function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
             <Link
-              href="#features"
-              className="text-slate-600 dark:text-slate-300 hover:text-primary-600 transition"
-            >
-              Features
-            </Link>
-            <Link
-              href="#courses"
+              href="/courses"
               className="text-slate-600 dark:text-slate-300 hover:text-primary-600 transition"
             >
               Courses
@@ -49,10 +43,22 @@ export function Navbar() {
               Schedule
             </Link>
             <Link
-              href="#testimonials"
+              href="/blog"
               className="text-slate-600 dark:text-slate-300 hover:text-primary-600 transition"
             >
-              Stories
+              Resources
+            </Link>
+            <Link
+              href="#faq"
+              className="text-slate-600 dark:text-slate-300 hover:text-primary-600 transition"
+            >
+              FAQs
+            </Link>
+            <Link
+              href="/dashboard"
+              className="text-slate-600 dark:text-slate-300 hover:text-primary-600 transition"
+            >
+              Dashboard
             </Link>
           </div>
 
@@ -82,13 +88,7 @@ export function Navbar() {
         {isOpen && (
           <div className="md:hidden border-t border-slate-200 dark:border-slate-700 py-4 space-y-3 animate-fade-in-up">
             <Link
-              href="#features"
-              className="block text-slate-600 dark:text-slate-300 hover:text-primary-600"
-            >
-              Features
-            </Link>
-            <Link
-              href="#courses"
+              href="/courses"
               className="block text-slate-600 dark:text-slate-300 hover:text-primary-600"
             >
               Courses
@@ -104,6 +104,24 @@ export function Navbar() {
               className="block text-slate-600 dark:text-slate-300 hover:text-primary-600"
             >
               Schedule
+            </Link>
+            <Link
+              href="/blog"
+              className="block text-slate-600 dark:text-slate-300 hover:text-primary-600"
+            >
+              Resources
+            </Link>
+            <Link
+              href="#faq"
+              className="block text-slate-600 dark:text-slate-300 hover:text-primary-600"
+            >
+              FAQs
+            </Link>
+            <Link
+              href="/dashboard"
+              className="block text-slate-600 dark:text-slate-300 hover:text-primary-600"
+            >
+              Dashboard
             </Link>
             <div className="pt-2">
               <EnrollModal />
